@@ -384,7 +384,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "##  Commit all source files to github.\ncd ~/Desktop/MyApp\ngit config --global push.default matching\ngit add MyApp/Base.lproj/*.storyboard\ngit add MyApp/*.swift\ngit commit -m \"Autocommit\"\ngit push\n\n##  Upload symbols to Parse for crash logging.  \nexport PATH=/usr/local/bin:$PATH\ncd ~/Desktop/MyApp/parse\nparse symbols \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\" &\n\n##  HockeyApp\nFILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n    \"$FILE\"\nfi\n";
+			shellScript = "exit\n\n##  Commit all source files to github.\ncd ~/Desktop/MyApp\ngit config --global push.default matching\ngit add MyApp/Base.lproj/*.storyboard\ngit add MyApp/*.swift\ngit commit -m \"Autocommit\"\ngit push\n\n##  Upload symbols to Parse for crash logging.  \nexport PATH=/usr/local/bin:$PATH\ncd ~/Desktop/MyApp/parse\nparse symbols \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\" &\n\n##  HockeyApp\nFILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n    \"$FILE\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
