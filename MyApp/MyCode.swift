@@ -41,5 +41,4 @@ class MyCode {
 
     let space = " "
     
-    
 }
