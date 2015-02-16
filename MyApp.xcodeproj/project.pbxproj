@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235C53951A92292C00715D40 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235C53941A92292C00715D40 /* AssetsLibrary.framework */; };
+		235C53971A92293500715D40 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235C53961A92293500715D40 /* CoreText.framework */; };
+		235C53991A92293C00715D40 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235C53981A92293C00715D40 /* QuickLook.framework */; };
+		235C539F1A92297200715D40 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235C539B1A92297200715D40 /* HockeySDK.framework */; };
+		235C53A01A92297200715D40 /* HockeySDK.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 235C539D1A92297200715D40 /* HockeySDK.xcconfig */; };
+		235C53A11A92297200715D40 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 235C539E1A92297200715D40 /* HockeySDKResources.bundle */; };
 		23CCE7CE1A91E426005AA619 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CCE7C91A91E426005AA619 /* Bolts.framework */; };
 		23CCE7CF1A91E426005AA619 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CCE7CA1A91E426005AA619 /* Parse.framework */; };
 		23CCE7D01A91E426005AA619 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CCE7CB1A91E426005AA619 /* ParseCrashReporting.framework */; };
@@ -51,6 +57,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		235C53941A92292C00715D40 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		235C53961A92293500715D40 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		235C53981A92293C00715D40 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		235C539B1A92297200715D40 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
+		235C539D1A92297200715D40 /* HockeySDK.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = HockeySDK.xcconfig; sourceTree = "<group>"; };
+		235C539E1A92297200715D40 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 		23CCE7C91A91E426005AA619 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = MyApp/Bolts.framework; sourceTree = "<group>"; };
 		23CCE7CA1A91E426005AA619 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = MyApp/Parse.framework; sourceTree = "<group>"; };
 		23CCE7CB1A91E426005AA619 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = MyApp/ParseCrashReporting.framework; sourceTree = "<group>"; };
@@ -94,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235C53991A92293C00715D40 /* QuickLook.framework in Frameworks */,
+				235C53971A92293500715D40 /* CoreText.framework in Frameworks */,
+				235C53951A92292C00715D40 /* AssetsLibrary.framework in Frameworks */,
 				23CCE7FD1A91E64D005AA619 /* CoreLocation.framework in Frameworks */,
 				23CCE7FB1A91E645005AA619 /* CoreBluetooth.framework in Frameworks */,
 				23CCE7F91A91E636005AA619 /* AudioToolbox.framework in Frameworks */,
@@ -111,6 +126,7 @@
 				23CCE7E11A91E4C8005AA619 /* libstdc++.6.dylib in Frameworks */,
 				23CCE7CF1A91E426005AA619 /* Parse.framework in Frameworks */,
 				23CCE7D01A91E426005AA619 /* ParseCrashReporting.framework in Frameworks */,
+				235C539F1A92297200715D40 /* HockeySDK.framework in Frameworks */,
 				23CCE7D21A91E426005AA619 /* ParseUI.framework in Frameworks */,
 				23CCE7D11A91E426005AA619 /* ParseFacebookUtils.framework in Frameworks */,
 				23CCE7CE1A91E426005AA619 /* Bolts.framework in Frameworks */,
@@ -127,9 +143,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		235C539A1A92297200715D40 /* HockeySDK.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				235C539B1A92297200715D40 /* HockeySDK.framework */,
+				235C539C1A92297200715D40 /* Resources */,
+			);
+			name = HockeySDK.embeddedframework;
+			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
+			sourceTree = "<group>";
+		};
+		235C539C1A92297200715D40 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				235C539D1A92297200715D40 /* HockeySDK.xcconfig */,
+				235C539E1A92297200715D40 /* HockeySDKResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		23CCE7FE1A91E6A5005AA619 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				235C539A1A92297200715D40 /* HockeySDK.embeddedframework */,
+				235C53981A92293C00715D40 /* QuickLook.framework */,
+				235C53961A92293500715D40 /* CoreText.framework */,
+				235C53941A92292C00715D40 /* AssetsLibrary.framework */,
 				23CCE7C91A91E426005AA619 /* Bolts.framework */,
 				23CCE7CA1A91E426005AA619 /* Parse.framework */,
 				23CCE7CB1A91E426005AA619 /* ParseCrashReporting.framework */,
@@ -318,6 +357,8 @@
 			files = (
 				23F480691A91E32D00A14446 /* LaunchScreen.xib in Resources */,
 				23CCE8011A91E6DF005AA619 /* My.storyboard in Resources */,
+				235C53A11A92297200715D40 /* HockeySDKResources.bundle in Resources */,
+				235C53A01A92297200715D40 /* HockeySDK.xcconfig in Resources */,
 				23F480661A91E32D00A14446 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,7 +384,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "##  Commit all source files to github.\ncd ~/Desktop/MyApp\ngit config --global push.default matching\ngit add MyApp/Base.lproj/*.storyboard\ngit add MyApp/*.swift\ngit commit -m \"Autocommit\"\ngit push\n\n##  Upload symbols to Parse for crash logging.  \nexport PATH=/usr/local/bin:$PATH\ncd ~/Desktop/MyApp/parse\nparse symbols \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\" &\n";
+			shellScript = "##  Commit all source files to github.\ncd ~/Desktop/MyApp\ngit config --global push.default matching\ngit add MyApp/Base.lproj/*.storyboard\ngit add MyApp/*.swift\ngit commit -m \"Autocommit\"\ngit push\n\n##  Upload symbols to Parse for crash logging.  \nexport PATH=/usr/local/bin:$PATH\ncd ~/Desktop/MyApp/parse\nparse symbols \"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\" &\n\n##  HockeyApp\nFILE=\"${SRCROOT}/HockeySDK-iOS/BuildAgent\"\nif [ -f \"$FILE\" ]; then\n    \"$FILE\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -485,6 +526,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyApp",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -502,6 +544,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyApp",
+					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
 				);
 				INFOPLIST_FILE = MyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
