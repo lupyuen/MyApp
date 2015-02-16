@@ -2,20 +2,66 @@
 //  AppDelegate.swift
 //  MyApp
 //
-//  Created by besqrddev on 2/16/15.
-//  Copyright (c) 2015 besqrddev. All rights reserved.
+//  Created by Luppy on 15/2/15.
+//  Copyright (c) 2015 Lee Lup Yuen. All rights reserved.
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var beaconManager: BeaconManager?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Initialize Parse.
+        /*
+        Enable Crash Reporting
+        Remember to add to MyApp -> Build Phases -> Run Script
+        
+        export PATH=/usr/local/bin:$PATH
+        cd ~/Desktop/MyApp/parse
+        parse symbols "${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}"
+        */
+        ParseCrashReporting.enable()
+        
+        Parse.enableLocalDatastore()
+        // Setup Parse.
+        Parse.setApplicationId("w0VLKuzlB18EeZUAVnx8lj2WqcrOW9XrCDzOvZb3",
+            clientKey: "qPo0opX8uKki3iUYIgxIzfcdbRUSpc4YgAveZ6WF")
+        // Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        //  Enable security.
+        /*
+        PFUser.enableAutomaticUser()
+        var defaultACL = PFACL.ACL()
+        // Optionally enable public read access while disabling public write access.
+        // defaultACL.setPublicReadAccess(true)
+        PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser:true)
+        */
+        
+        //  Create a BeaconManager to handle beacons.
+        beaconManager = BeaconManager()
+        //  Broadcast this device as a beacon.
+        beaconManager?.createBeacon()
+        //  Listen for other beacons.
+        beaconManager?.registerBeacons()
+        
+        //  Prompt to allow notifications.
+        if(application.respondsToSelector("registerUserNotificationSettings:")) {
+            application.registerUserNotificationSettings(
+                UIUserNotificationSettings(
+                    forTypes: UIUserNotificationType.Alert | UIUserNotificationType.Sound,
+                    categories: nil
+                )
+            )
+        }
+
         return true
     }
 
