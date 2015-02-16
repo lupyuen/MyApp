@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import HockeySDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -44,6 +45,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // defaultACL.setPublicReadAccess(true)
         PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser:true)
         */
+        
+        //  Initialize HockeyApp.
+        BITHockeyManager.sharedHockeyManager().configureWithIdentifier("a4e5da488bfc03688a423de9f24c065b")
+        BITHockeyManager.sharedHockeyManager().startManager()
+        BITHockeyManager.sharedHockeyManager().authenticator.authenticateInstallation()
         
         //  Create a BeaconManager to handle beacons.
         beaconManager = BeaconManager()
