@@ -3,7 +3,7 @@ import UIKit
 class MyCode {
     func button1IsPressed(myScreen: MyScreen) {
         myScreen.label1.text =
-            "eat"
+            "touch"
             + space
             + myScreen.textbox1.text
     }
