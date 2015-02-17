@@ -197,16 +197,16 @@
 		23CCE8021A91E748005AA619 /* Hidden */ = {
 			isa = PBXGroup;
 			children = (
-				23F480711A91E32D00A14446 /* MyAppTests */,
-				23F480581A91E32C00A14446 /* Products */,
-				23CCE8031A91E955005AA619 /* Controllers */,
 				23F4805C1A91E32C00A14446 /* AppDelegate.swift */,
-				23F480651A91E32D00A14446 /* Images.xcassets */,
-				23F480671A91E32D00A14446 /* LaunchScreen.xib */,
-				23F4805A1A91E32C00A14446 /* Supporting Files */,
-				23CCE7FE1A91E6A5005AA619 /* Frameworks */,
 				23CCE7D31A91E463005AA619 /* BeaconManager.swift */,
 				23CCE7D41A91E463005AA619 /* BridgingHeader.h */,
+				23F480671A91E32D00A14446 /* LaunchScreen.xib */,
+				23F480651A91E32D00A14446 /* Images.xcassets */,
+				23CCE8031A91E955005AA619 /* Controllers */,
+				23CCE7FE1A91E6A5005AA619 /* Frameworks */,
+				23F480711A91E32D00A14446 /* MyAppTests */,
+				23F480581A91E32C00A14446 /* Products */,
+				23F4805A1A91E32C00A14446 /* Supporting Files */,
 			);
 			name = Hidden;
 			sourceTree = "<group>";
@@ -324,6 +324,7 @@
 				TargetAttributes = {
 					23F480561A91E32C00A14446 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3E97UVPMHR;
 					};
 					23F4806D1A91E32D00A14446 = {
 						CreatedOnToolsVersion = 6.1.1;
