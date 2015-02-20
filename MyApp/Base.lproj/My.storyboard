@@ -216,10 +216,10 @@
             </objects>
             <point key="canvasLocation" x="-1680" y="-336"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home Controller-->
         <scene sceneID="BUR-nO-L4j">
             <objects>
-                <navigationController id="MCJ-VV-c8N" sceneMemberID="viewController">
+                <navigationController title="Home Controller" id="MCJ-VV-c8N" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ULK-ij-Bx7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -235,7 +235,7 @@
         <!--List Screen-->
         <scene sceneID="2hz-4b-ysM">
             <objects>
-                <tableViewController id="wU7-xn-O4J" customClass="ListScreen" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="List Screen" id="wU7-xn-O4J" customClass="ListScreen" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Iq3-R1-OrY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -366,10 +366,10 @@
             </objects>
             <point key="canvasLocation" x="86" y="-336"/>
         </scene>
-        <!--List Screen-->
+        <!--List Controller-->
         <scene sceneID="dO1-jK-lJc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MXw-iW-uYQ" sceneMemberID="viewController">
+                <navigationController title="List Controller" automaticallyAdjustsScrollViewInsets="NO" id="MXw-iW-uYQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="List Screen" image="first" id="onO-wO-mgw"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PGV-XZ-c3B">

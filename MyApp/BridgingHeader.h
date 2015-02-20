@@ -5,3 +5,4 @@
 #import <Parse/Parse.h>
 #import <ParseCrashReporting/ParseCrashReporting.h>
 #import <Bolts/Bolts.h>
+#import "SWRevealViewController.h"

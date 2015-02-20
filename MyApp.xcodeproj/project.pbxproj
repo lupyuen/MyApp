@@ -44,6 +44,9 @@
 		23F480661A91E32D00A14446 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23F480651A91E32D00A14446 /* Images.xcassets */; };
 		23F480691A91E32D00A14446 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F480671A91E32D00A14446 /* LaunchScreen.xib */; };
 		23F480751A91E32D00A14446 /* MyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F480741A91E32D00A14446 /* MyAppTests.swift */; };
+		B31C840A1A978113009DF6E9 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31C84091A978113009DF6E9 /* SWRevealViewController.m */; };
+		B31C840E1A978A25009DF6E9 /* TabContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31C840D1A978A25009DF6E9 /* TabContainer.swift */; };
+		B361D0181A97914400031F5C /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B361D0171A97914400031F5C /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,10 @@
 		23F4806E1A91E32D00A14446 /* MyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23F480731A91E32D00A14446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23F480741A91E32D00A14446 /* MyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppTests.swift; sourceTree = "<group>"; };
+		B31C84081A978113009DF6E9 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B31C84091A978113009DF6E9 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		B31C840D1A978A25009DF6E9 /* TabContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabContainer.swift; sourceTree = "<group>"; };
+		B361D0171A97914400031F5C /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,10 +221,13 @@
 		23CCE8031A91E955005AA619 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				B31C84071A978113009DF6E9 /* SWRevealViewController */,
 				23CCE7D81A91E463005AA619 /* MyScreen.swift */,
 				23CCE7D91A91E463005AA619 /* NextScreen.swift */,
 				23CCE7D51A91E463005AA619 /* DetailScreen.swift */,
 				23CCE7D61A91E463005AA619 /* ListScreen.swift */,
+				B31C840D1A978A25009DF6E9 /* TabContainer.swift */,
+				B361D0171A97914400031F5C /* Menu.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -272,6 +282,15 @@
 				23F480731A91E32D00A14446 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B31C84071A978113009DF6E9 /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B31C84081A978113009DF6E9 /* SWRevealViewController.h */,
+				B31C84091A978113009DF6E9 /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,9 +413,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31C840E1A978A25009DF6E9 /* TabContainer.swift in Sources */,
 				23CCE7DB1A91E463005AA619 /* DetailScreen.swift in Sources */,
 				23CCE7DD1A91E463005AA619 /* MyCode.swift in Sources */,
 				23CCE7DC1A91E463005AA619 /* ListScreen.swift in Sources */,
+				B361D0181A97914400031F5C /* Menu.swift in Sources */,
+				B31C840A1A978113009DF6E9 /* SWRevealViewController.m in Sources */,
 				23CCE7DA1A91E463005AA619 /* BeaconManager.swift in Sources */,
 				23F4805D1A91E32C00A14446 /* AppDelegate.swift in Sources */,
 				23CCE7DF1A91E463005AA619 /* NextScreen.swift in Sources */,
