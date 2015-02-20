@@ -30,6 +30,16 @@ class MyScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        //menuButton.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
+        var revealViewController = self.revealViewController()
+        if (revealViewController != nil)
+        {
+            var z = 1
+            //self.sidebarButton.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
+            //self.sidebarButton.setTarget(self.revealViewController)
+            //self.sidebarButton setAction: @selector( revealToggle: )];
+            //[self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+        }
     }
 
     override func didReceiveMemoryWarning() {
