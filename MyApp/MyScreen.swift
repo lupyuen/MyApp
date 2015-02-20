@@ -30,12 +30,12 @@ class MyScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //menuButton.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
+
         var revealViewController = self.revealViewController()
         if (revealViewController != nil)
         {
             var tabContainer: TabContainer = revealViewController.rearViewController as TabContainer
-            var menuButton = tabContainer.menuButton?
+            //var menuButton = tabContainer.menuButton
             //menuButton.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
             
             //self.sidebarButton.setTarget(self.revealViewController)
@@ -51,6 +51,14 @@ class MyScreen: UIViewController {
     
     @IBAction func button1IsPressed(sender: AnyObject) {
         myCode.button1IsPressed(self)
+        
+        var revealViewController = self.revealViewController()
+        if (revealViewController != nil)
+        {
+            var tabContainer: TabContainer = revealViewController.rearViewController as TabContainer
+            var menuButton = tabContainer.menuButton
+            menuButton.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
+        }
     }
     
     @IBAction func button2IsPressed(sender: AnyObject) {
