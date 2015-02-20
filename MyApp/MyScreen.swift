@@ -37,7 +37,7 @@ class MyScreen: UIViewController {
             var tabContainer: TabContainer? = self.parentViewController as TabContainer?
             //var tabContainer: TabContainer = revealViewController.rearViewController[0] as TabContainer
             var menuButton = tabContainer?.menuButton
-            //menuButton.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
+            menuButton?.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
             
             //self.sidebarButton.setTarget(self.revealViewController)
             //self.sidebarButton setAction: @selector( revealToggle: )];
