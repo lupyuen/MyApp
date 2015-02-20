@@ -149,7 +149,7 @@
                                     <accessibilityTraits key="traits" none="YES"/>
                                 </accessibility>
                                 <connections>
-                                    <segue destination="49e-Tb-3d3" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="a8k-3S-mrk"/>
+                                    <segue destination="MCJ-VV-c8N" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="q1V-ul-bqM"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="item2" id="dZ4-tc-HFl">
@@ -192,7 +192,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYk-Il-4eu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-811" y="733"/>
+            <point key="canvasLocation" x="-1327" y="764"/>
         </scene>
         <!--Menu Controller-->
         <scene sceneID="jJD-1q-ZVh">
@@ -230,7 +230,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dh7-yu-SC7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-811" y="-336"/>
+            <point key="canvasLocation" x="-607" y="-336"/>
         </scene>
         <!--List Screen-->
         <scene sceneID="2hz-4b-ysM">
@@ -391,7 +391,7 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="a8k-3S-mrk"/>
-        <segue reference="MXa-xq-azY"/>
+        <segue reference="q1V-ul-bqM"/>
+        <segue reference="DGT-WY-C0r"/>
     </inferredMetricsTieBreakers>
 </document>
