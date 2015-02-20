@@ -31,17 +31,13 @@ class MyScreen: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
+        //  Set up the slide-out sidebar menu.
         var revealViewController = self.revealViewController()
         if (revealViewController != nil)
         {
             var tabContainer: TabContainer? = self.parentViewController as TabContainer?
-            //var tabContainer: TabContainer = revealViewController.rearViewController[0] as TabContainer
             var menuButton = tabContainer?.menuButton
             menuButton?.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
-            
-            //self.sidebarButton.setTarget(self.revealViewController)
-            //self.sidebarButton setAction: @selector( revealToggle: )];
-            //[self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
         }
     }
 
