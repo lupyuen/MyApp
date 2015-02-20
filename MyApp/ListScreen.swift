@@ -9,6 +9,8 @@
 import UIKit
 
 class ListScreen: UITableViewController {
+    
+    @IBOutlet weak var menuButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,13 @@ class ListScreen: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        //  Set up the slide-out sidebar menu.
+        var revealViewController = self.revealViewController()
+        if (revealViewController != nil)
+        {
+            menuButton?.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
+        }
     }
 
     override func didReceiveMemoryWarning() {

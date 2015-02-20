@@ -255,7 +255,19 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="List Screen" id="M3r-Si-jjW">
                         <barButtonItem key="backBarButtonItem" title="Back" id="YO0-Vw-sZA"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="oVJ-9r-rdy">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="vXy-Pq-T4v">
+                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="menuButton" destination="vXy-Pq-T4v" id="r50-b2-prP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EiK-lr-YkN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -328,7 +340,7 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k4W-bW-gL5">
                                 <rect key="frame" x="-23" y="-15" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Menu">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -376,6 +388,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fY1-fU-0v4"/>
+        <segue reference="MXa-xq-azY"/>
     </inferredMetricsTieBreakers>
 </document>
