@@ -282,7 +282,15 @@
             <objects>
                 <tabBarController id="49e-Tb-3d3" customClass="TabContainer" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="wwl-uh-7Of">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="deV-bY-qFI"/>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="Qsc-1R-56h">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="k4W-bW-gL5">
+                                <rect key="frame" x="-23" y="-15" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
@@ -291,7 +299,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <outlet property="menuButton" destination="deV-bY-qFI" id="aQ1-Ur-zHG"/>
+                        <outlet property="menuButton" destination="k4W-bW-gL5" id="9mZ-u6-AOo"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="pZm-O2-Dfo"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="wdv-nj-BP7"/>
                         <segue destination="MXw-iW-uYQ" kind="relationship" relationship="viewControllers" id="MXa-xq-azY"/>

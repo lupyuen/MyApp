@@ -10,7 +10,7 @@ import UIKit
 
 class TabContainer: UITabBarController {
 
-    @IBOutlet weak var menuButton: UIBarButtonItem!
+    @IBOutlet weak var menuButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
