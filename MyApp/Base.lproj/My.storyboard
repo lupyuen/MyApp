@@ -149,10 +149,10 @@
             </objects>
             <point key="canvasLocation" x="-803" y="407"/>
         </scene>
-        <!--Reveal View Controller-->
+        <!--Menu Controller-->
         <scene sceneID="jJD-1q-ZVh">
             <objects>
-                <viewController id="H78-8d-lf3" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController title="Menu Controller" id="H78-8d-lf3" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JVh-lZ-9ob"/>
                         <viewControllerLayoutGuide type="bottom" id="rla-c7-kVb"/>
