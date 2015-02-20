@@ -34,7 +34,8 @@ class MyScreen: UIViewController {
         var revealViewController = self.revealViewController()
         if (revealViewController != nil)
         {
-            var tabContainer: TabContainer = revealViewController.rearViewController as TabContainer
+            var rearViewController = revealViewController.rearViewController
+            //var tabContainer: TabContainer = revealViewController.rearViewController[0] as TabContainer
             //var menuButton = tabContainer.menuButton
             //menuButton.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
             
@@ -51,14 +52,6 @@ class MyScreen: UIViewController {
     
     @IBAction func button1IsPressed(sender: AnyObject) {
         myCode.button1IsPressed(self)
-        
-        var revealViewController = self.revealViewController()
-        if (revealViewController != nil)
-        {
-            var tabContainer: TabContainer = revealViewController.rearViewController as TabContainer
-            var menuButton = tabContainer.menuButton
-            menuButton.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
-        }
     }
     
     @IBAction func button2IsPressed(sender: AnyObject) {
