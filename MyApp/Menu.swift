@@ -9,6 +9,8 @@
 import UIKit
 
 class Menu: UITableViewController {
+    
+    var menuItems = ["item1", "item2", "item3"];
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,14 +38,13 @@ class Menu: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 3
+        return menuItems.count;
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
-
-        // Configure the cell...
-        cell.textLabel?.text = "Item"
+        //  Return the cell based on the cell identifier of the prototype.
+        var cellIdentifier = menuItems[indexPath.row]
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as UITableViewCell
         return cell
     }
 
