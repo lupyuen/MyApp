@@ -34,8 +34,9 @@ class MyScreen: UIViewController {
         var revealViewController = self.revealViewController()
         if (revealViewController != nil)
         {
-            //var sidebarButton = self.sidebarButton()
-            //self.sidebarButton.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
+            var z = 1
+            //var menuButton: UIBarButtonItem = self.menuButton?
+            //menuButton.addTarget(self.revealViewController(), action: "revealToggle:", forControlEvents: UIControlEvents.TouchUpInside)
             //self.sidebarButton.setTarget(self.revealViewController)
             //self.sidebarButton setAction: @selector( revealToggle: )];
             //[self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];

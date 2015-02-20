@@ -277,10 +277,10 @@
             </objects>
             <point key="canvasLocation" x="968" y="-58"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Container-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="TabContainer" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="wwl-uh-7Of">
                         <barButtonItem key="leftBarButtonItem" title="Item" id="deV-bY-qFI"/>
                     </navigationItem>
@@ -291,6 +291,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <outlet property="menuButton" destination="deV-bY-qFI" id="aQ1-Ur-zHG"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="pZm-O2-Dfo"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="wdv-nj-BP7"/>
                         <segue destination="MXw-iW-uYQ" kind="relationship" relationship="viewControllers" id="MXa-xq-azY"/>
