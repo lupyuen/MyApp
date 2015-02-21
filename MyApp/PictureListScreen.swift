@@ -43,9 +43,10 @@ class PictureListScreen: UICollectionViewController, UICollectionViewDelegateFlo
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as PictureListCell
         cell.label.text = self.titles[indexPath.row % 5]
-        let curr = indexPath.row % 5  + 1
-        let imgName = "pin\(curr).jpg"
-        //cell.image.image = UIImage(named: imgName)
+        
+        let url = NSURL(string: "http://www.healthguru.sg/wp-content/uploads/2012/07/4._nestle-milo-tin-400g.jpg")
+        var imageData =  NSData(contentsOfURL: url!)
+        cell.image.image = UIImage(data: imageData! as NSData)
         return cell
     }
     
