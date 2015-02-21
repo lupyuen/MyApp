@@ -42,12 +42,10 @@ class PictureListScreen: UICollectionViewController, UICollectionViewDelegateFlo
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as PictureListCell
-        /*
-        cell.title.text = self.titles[indexPath.row % 5]
+        cell.label.text = self.titles[indexPath.row % 5]
         let curr = indexPath.row % 5  + 1
         let imgName = "pin\(curr).jpg"
-        cell.pinImage.image = UIImage(named: imgName)
-        */
+        //cell.image.image = UIImage(named: imgName)
         return cell
     }
     

@@ -334,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="968" y="-58"/>
         </scene>
-        <!--Item-->
+        <!--Picture List-->
         <scene sceneID="5BD-fb-IFA">
             <objects>
-                <collectionViewController id="iry-iX-GX2" customClass="PictureListScreen" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="Picture List" id="iry-iX-GX2" customClass="PictureListScreen" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="0cq-zs-Bh0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -368,6 +368,10 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <outlet property="image" destination="Nox-o3-Ja0" id="lcl-ku-HFg"/>
+                                    <outlet property="label" destination="y78-Hb-Vgm" id="cSq-ge-Pgh"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -375,7 +379,7 @@
                             <outlet property="delegate" destination="iry-iX-GX2" id="hPl-hi-sDp"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item" id="gWI-Yy-y0T"/>
+                    <tabBarItem key="tabBarItem" title="Picture List" id="gWI-Yy-y0T"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0hi-4D-6yp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
