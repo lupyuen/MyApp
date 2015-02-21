@@ -47,6 +47,9 @@ class PictureListScreen: UICollectionViewController, UICollectionViewDelegateFlo
         let url = NSURL(string: "http://www.healthguru.sg/wp-content/uploads/2012/07/4._nestle-milo-tin-400g.jpg")
         var imageData =  NSData(contentsOfURL: url!)
         cell.image.image = UIImage(data: imageData! as NSData)
+
+        //self.verticalLayoutConstraint.constant = self.collectionView.contentSize.height;
+
         return cell
     }
     
@@ -56,7 +59,7 @@ class PictureListScreen: UICollectionViewController, UICollectionViewDelegateFlo
             var height = 200
             if (indexPath.row == 0)
             {
-                height = 100                
+                //height = 100
             }
             return CGSize(width: 140, height: height)
     }
