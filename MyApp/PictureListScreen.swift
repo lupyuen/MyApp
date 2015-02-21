@@ -53,7 +53,7 @@ class PictureListScreen: UICollectionViewController, UICollectionViewDelegateFlo
     func collectionView(collectionView: UICollectionView!,
         layout collectionViewLayout: UICollectionViewLayout!,
         sizeForItemAtIndexPath indexPath: NSIndexPath!) -> CGSize {
-            return CGSize(width: 170, height: 300)
+            return CGSize(width: 100, height: 200)
     }
     
     func collectionView(collectionView: UICollectionView!,
